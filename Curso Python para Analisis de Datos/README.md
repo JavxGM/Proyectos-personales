@@ -60,8 +60,46 @@ Aqui el diccionario tiene:
 - `DataFrame` = dos dimensiones
 - Pandas permite convertir listas y diccionarios en estructuras de datos utiles para analisis
 
+## Video 2 - Exportar e Importar un DataFrame
+
+### 1. Exportar un DataFrame
+
+Pandas permite guardar un `DataFrame` en un archivo para reutilizarlo despues.
+
+#### Ejemplo
+
+```python
+df.to_csv("data.csv")
+```
+
+#### Idea clave
+
+Aqui `to_csv()` exporta el `DataFrame` a un archivo CSV llamado `data.csv`.
+
+### 2. Importar un DataFrame
+
+Pandas tambien permite leer archivos CSV y convertirlos nuevamente en un `DataFrame`.
+
+#### Ejemplo
+
+```python
+import_df = pd.read_csv("data.csv", index_col=0)
+import_df
+```
+
+#### Idea clave
+
+Aqui `pd.read_csv()` lee el archivo `data.csv` y `index_col=0` indica que la primera columna se use como indice.
+
+### Resumen corto del video
+
+- `to_csv()` permite exportar un `DataFrame` a un archivo CSV
+- `read_csv()` permite importar un archivo CSV como `DataFrame`
+- `index_col=0` ayuda a conservar el indice original al volver a cargar los datos
+
 ## Estructura del proyecto
 
 - `AnalisisDatos.ipynb`: notebook principal del curso.
+- `data.csv`: archivo generado al exportar el `DataFrame`.
 - `requirements.txt`: dependencias base del entorno.
 - `activate_env.ps1`: activa el entorno virtual en PowerShell.
