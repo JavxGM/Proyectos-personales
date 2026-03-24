@@ -2,15 +2,15 @@
 
 Este espacio guarda el avance del curso, incluyendo notebooks, dependencias y un resumen por clase.
 
-## Clase 1 - Resumen
+## Resumen actual del notebook
 
-Como punto de partida se preparo el entorno de trabajo para analisis de datos en Python.
+El notebook principal ya incluye ejercicios introductorios de `pandas` enfocados en estructuras basicas de datos.
 
-- Se instalo Python 3.12 para el proyecto.
-- Se creo un entorno virtual local para aislar dependencias.
-- Se definieron las librerias base del curso: `pandas`, `numpy`, `matplotlib` y `seaborn`.
-- Se dejo una configuracion lista para trabajar desde PowerShell.
-- Se preparo el notebook principal `AnalisisDatos.ipynb` como base para las siguientes clases.
+- Se importa `pandas` como `pd`.
+- Se crea una `Series` a partir de una lista numerica.
+- Se documenta la diferencia entre una estructura unidimensional (`Series`) y una bidimensional (`DataFrame`).
+- Se define un diccionario con columnas `Nombre`, `Edad` y `Ciudad`.
+- Se construye un `DataFrame` a partir de ese diccionario y se visualiza en pantalla.
 
 ## Estructura
 
